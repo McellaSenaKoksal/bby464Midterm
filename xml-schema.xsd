@@ -1,0 +1,41 @@
+<xml version="1.0">
+<xs:schema >
+    
+<xs:element name="Books">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Book_ID" type="xs:integer"/>
+      <xs:element name="ISBN" type="xs:integer"/>
+      <xs:element name="Book_Name" type="xs:string"/>
+      <xs:element name="Author_Name" type="xs:string"/>
+      <xs:element name="Publisher" type="xs:string"/>
+      <xs:element name="YearofPrinting" type="xs:date"/>
+      <xs:element name="NumberofPage" type="xs:integer"/>
+      <xs:element name="Type" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+    
+    <xs:element name="Authors">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Author_ID" type="xs:integer"/>
+      <xs:element name="Author_Name" type="xs:string"/>
+      <xs:element name="Author_Nation" type="xs:string"/>
+      <xs:element name="Author_Gender" type="xs:integer"/>
+      <xs:element name="Author_Age" type="xs:date"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+    <xs:element name="Publishers">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Publisher_ID" type="xs:integer"/>
+      <xs:element name="Publisher" type="xs:string"/>
+      <xs:element name="Contact" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+    
+</xs:schema>
